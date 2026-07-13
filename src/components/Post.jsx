@@ -22,7 +22,7 @@ export default function Post() {
       {/* F1 Car Image */}
       <div style={styles.imageContainer}>
         <img 
-          src="public/image-F1-front.webp" 
+          src="/image-F1-front.webp" 
           alt="F1 Racing Car" 
           style={styles.image}
         />
