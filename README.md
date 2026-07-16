@@ -1,4 +1,4 @@
-# r04-nested-comment-thread-1
+# Nested Comment Thread
 
 ![Preview](./public/nested-comment.png)
 
