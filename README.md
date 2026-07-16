@@ -1,16 +1,47 @@
-# React + Vite
+# r04-nested-comment-thread-1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview](./public/Group 1321314600.png)
 
-Currently, two official plugins are available:
+An interactive, state-driven nested comment section built in React. This project demonstrates recursive component rendering, tree-structured state manipulation, and seamless user interaction for posting replies, editing comments, and deleting threads.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **[View Live Demo](https://nested-commment-section.netlify.app/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
+* **Infinite Nesting Support:** Replies can be nested recursively, creating clear discussion threads.
+* **CRUD Operations:** Users can add new comments, reply to existing threads, edit their posts, and delete comments.
+* **Toggleable Threads:** Collapse or expand entire sub-threads for a cleaner user experience.
+* **Responsive Styling:** Elegant tree-line indentation optimized for both desktop and mobile layouts.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+* **Framework:** React 18+
+* **Build Tool:** Vite
+* **Styling:** CSS3 / Custom responsive layout
+* **Hosting:** Netlify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚛️ React Elements & Concepts in Use
+
+This project utilizes advanced React concepts to manage hierarchical data structures and clean state updates:
+
+* **Recursive Component Rendering:**
+  * Uses a single `<Comment />` component that conditionally renders instances of itself inside its own body to display deeply nested replies without hardcoded limits.
+* **Tree State Manipulation:**
+  * Uses a centralized `useState` hook at the root to store comments as a nested tree object array.
+  * Implements helper functions to recursively traverse, find, and update the nested tree structure whenever a node is added, edited, or deleted.
+* **Conditional UI States:**
+  * Manages toggling states for showing/hiding reply input fields, editing modes, and collapsing/expanding child components.
+* **Component Composition:**
+  * Keeps logic organized and modular by separating concerns between the main thread container, the individual comment nodes, and the reply input boxes.
+
+---
+
+## 💻 How to Run Locally
+
+Since this project utilizes React and Vite, you will need Node.js installed on your computer to run it:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/shepherd-bit/r04-nested-comment-thread-1.git](https://github.com/shepherd-bit/r04-nested-comment-thread-1.git)
