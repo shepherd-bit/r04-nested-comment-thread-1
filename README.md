@@ -1,6 +1,6 @@
 # r04-nested-comment-thread-1
 
-![Preview](./public/Group 1321314600.png)
+![Preview](./Group 1321314600.png)
 
 An interactive, state-driven nested comment section built in React. This project demonstrates recursive component rendering, tree-structured state manipulation, and seamless user interaction for posting replies, editing comments, and deleting threads.
 
